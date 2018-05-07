@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM alpine:3.7
+FROM alpine:3.6
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
@@ -46,8 +46,6 @@ RUN set -ex \
 		gdbm-dev \
 		libc-dev \
 		libffi-dev \
-		libnsl-dev \
-		libtirpc-dev \
 		linux-headers \
 		make \
 		ncurses-dev \
